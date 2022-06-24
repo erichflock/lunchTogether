@@ -10,6 +10,7 @@ import SwiftUI
 class LunchesViewModel: ObservableObject {
     
     @Published var lunches: [Lunch] = []
+    @Published var isShowingFormView: Bool = false
     
 //    private let repository: FirebaseRepository
     
@@ -27,6 +28,10 @@ class LunchesViewModel: ObservableObject {
         lunches.append(lunch1)
         lunches.append(lunch2)
         lunches.append(lunch3)
+    }
+    
+    func getBlurRadius() -> CGFloat {
+        isShowingFormView ? 20 : 0
     }
     
 }

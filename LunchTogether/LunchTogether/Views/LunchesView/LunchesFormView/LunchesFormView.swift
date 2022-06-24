@@ -17,7 +17,7 @@ struct LunchesFormView: View {
             Form {
                 TextField("Restaurant name", text: $viewModel.restaurantName)
                 TextField("Restaurant address", text: $viewModel.restaurantAddress)
-                DatePicker("Birthday", selection: $viewModel.date, displayedComponents: .date)
+                DatePicker("Date", selection: $viewModel.date, displayedComponents: .date)
             }
             .padding()
             Button {
