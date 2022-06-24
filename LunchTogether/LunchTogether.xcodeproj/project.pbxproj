@@ -17,6 +17,9 @@
 		36EAC21D2865C2CB007298E8 /* LunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC21C2865C2CB007298E8 /* LunchesViewModel.swift */; };
 		36EAC21F2865C4EB007298E8 /* Lunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC21E2865C4EB007298E8 /* Lunch.swift */; };
 		36EAC2212865C630007298E8 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2202865C630007298E8 /* Participant.swift */; };
+		36EAC2242865D050007298E8 /* LunchesFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2232865D050007298E8 /* LunchesFormView.swift */; };
+		36EAC2272865D097007298E8 /* XRoundedDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2262865D097007298E8 /* XRoundedDismissButton.swift */; };
+		36EAC2292865D2E8007298E8 /* LunchesFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2282865D2E8007298E8 /* LunchesFormViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		36EAC21C2865C2CB007298E8 /* LunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesViewModel.swift; sourceTree = "<group>"; };
 		36EAC21E2865C4EB007298E8 /* Lunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch.swift; sourceTree = "<group>"; };
 		36EAC2202865C630007298E8 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		36EAC2232865D050007298E8 /* LunchesFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesFormView.swift; sourceTree = "<group>"; };
+		36EAC2262865D097007298E8 /* XRoundedDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRoundedDismissButton.swift; sourceTree = "<group>"; };
+		36EAC2282865D2E8007298E8 /* LunchesFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesFormViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		36EAC2122865B67E007298E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				36EAC2252865D086007298E8 /* Buttons */,
 				36EAC2192865C258007298E8 /* LunchesView */,
 				36EAC2132865B765007298E8 /* LocationsView */,
 			);
@@ -113,8 +120,26 @@
 			children = (
 				36EAC21A2865C29C007298E8 /* LunchesView.swift */,
 				36EAC21C2865C2CB007298E8 /* LunchesViewModel.swift */,
+				36EAC2222865D018007298E8 /* LunchesFormView */,
 			);
 			path = LunchesView;
+			sourceTree = "<group>";
+		};
+		36EAC2222865D018007298E8 /* LunchesFormView */ = {
+			isa = PBXGroup;
+			children = (
+				36EAC2232865D050007298E8 /* LunchesFormView.swift */,
+				36EAC2282865D2E8007298E8 /* LunchesFormViewModel.swift */,
+			);
+			path = LunchesFormView;
+			sourceTree = "<group>";
+		};
+		36EAC2252865D086007298E8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				36EAC2262865D097007298E8 /* XRoundedDismissButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +215,12 @@
 				36EAC2072865B5E4007298E8 /* LocationsView.swift in Sources */,
 				36EAC2152865B77D007298E8 /* LocationsViewModel.swift in Sources */,
 				36EAC2182865B947007298E8 /* Location.swift in Sources */,
+				36EAC2272865D097007298E8 /* XRoundedDismissButton.swift in Sources */,
 				36EAC2212865C630007298E8 /* Participant.swift in Sources */,
 				36EAC21F2865C4EB007298E8 /* Lunch.swift in Sources */,
+				36EAC2292865D2E8007298E8 /* LunchesFormViewModel.swift in Sources */,
 				36EAC21B2865C29C007298E8 /* LunchesView.swift in Sources */,
+				36EAC2242865D050007298E8 /* LunchesFormView.swift in Sources */,
 				36EAC2052865B5E4007298E8 /* LunchTogetherApp.swift in Sources */,
 				36EAC21D2865C2CB007298E8 /* LunchesViewModel.swift in Sources */,
 			);
