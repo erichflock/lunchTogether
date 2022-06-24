@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FirebaseModel: Codable {
+protocol FirebaseModel: Decodable {
         
-//    static var collectionName: String
+    static var collectionName: String { get }
 }
