@@ -23,6 +23,7 @@ struct LunchesDetailView: View {
             } label: {
                 Text("Join event")
             }
+            .buttonStyle(.borderedProminent)
             .padding(.bottom, 100)
         }
     }

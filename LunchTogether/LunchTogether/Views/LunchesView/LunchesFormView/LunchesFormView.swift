@@ -25,6 +25,7 @@ struct LunchesFormView: View {
             } label: {
                 Text("Add Event")
             }
+            .buttonStyle(.borderedProminent)
             .padding()
         }
         .frame(width: 300, height: 300)
