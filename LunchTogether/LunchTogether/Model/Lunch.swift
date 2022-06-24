@@ -9,10 +9,7 @@ import SwiftUI
 import FirebaseFirestoreSwift
 
 struct Lunch: Identifiable {
-    
-    static var collectionName = "lunches"
-    
-    @DocumentID var id: String?
+    var id = UUID()
     var restaurant: String
     var time: String
     var participants: [Participant]

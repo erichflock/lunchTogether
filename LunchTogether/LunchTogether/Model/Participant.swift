@@ -8,9 +8,6 @@
 import FirebaseFirestoreSwift
 
 struct Participant {
-    
-    static var collectionName = "participants"
-    
-    @DocumentID var email: String?
+    let email: String
     let name: String
 }

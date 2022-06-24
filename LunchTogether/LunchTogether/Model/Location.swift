@@ -9,10 +9,7 @@ import Foundation
 import FirebaseFirestoreSwift
 
 struct Location: Identifiable {
-    
-    static var collectionName = "locations"
-    
-    @DocumentID var id: String?
+    var id = UUID()
     var city: String
     var office: String
 }

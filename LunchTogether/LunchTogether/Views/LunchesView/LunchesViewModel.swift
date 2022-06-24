@@ -13,14 +13,8 @@ class LunchesViewModel: ObservableObject {
     @Published var isShowingFormView: Bool = false
     @Published var isShowingDetailView: Bool = false
     
-//    private let repository: FirebaseRepository
-    
-    init() {
-//        repository = FirebaseRepository<Lunch>()
-    }
-    
     func getLunches() {
-//        repository.
+        
         
         lunches.removeAll()
         let lunch1 = Lunch(restaurant: "Subway", time: "26-06-2022", participants: [.init(email: "james@check24.de", name: "James")])
