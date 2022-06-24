@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>837029416217-pbnv6j814iphnco1krl3rkaii1hekf68.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.837029416217-pbnv6j814iphnco1krl3rkaii1hekf68</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC_oKfXcLlU8ZL_qvXJmmcpi0ryPL75WKI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>837029416217</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>check24.LunchTogether</string>
+	<key>PROJECT_ID</key>
+	<string>lunch-together-1a550</string>
+	<key>STORAGE_BUCKET</key>
+	<string>lunch-together-1a550.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:837029416217:ios:8c46e4af80e4a3581fc988</string>
+	<key>DATABASE_URL</key>
+	<string>https://lunch-together-1a550-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>

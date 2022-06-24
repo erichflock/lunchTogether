@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseFirestoreSwift
 
-struct Lunch: Identifiable {
-    let id = UUID()
-    let restaurant: String
-    let time: String
-    let participants: [Participant]
+struct Lunch: Identifiable, FirebaseModel {
+    
+    static var collectionName = "lunches"
+    
+    @DocumentID var id: String?
+    var restaurant: String
+    var time: String
+    var participants: [Participant]
 }

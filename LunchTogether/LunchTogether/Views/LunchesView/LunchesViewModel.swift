@@ -11,7 +11,15 @@ class LunchesViewModel: ObservableObject {
     
     @Published var lunches: [Lunch] = []
     
+    private let repository: FirebaseRepository
+    
+    init() {
+        repository = FirebaseRepository<Lunch>()
+    }
+    
     func getLunches() {
+        repository.
+        
         lunches.removeAll()
         let lunch1 = Lunch(restaurant: "Subway", time: "26-06-2022", participants: [.init(name: "James", email: "james@check24.de")])
         let lunch2 = Lunch(restaurant: "Burguer King", time: "26-06-2022", participants: [.init(name: "Karl", email: "karl@check24.de")])
