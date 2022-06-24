@@ -16,8 +16,8 @@ struct LunchesView: View {
         ZStack {
             VStack {
                 List(viewModel.lunches) { lunch in
-                    NavigationLink(destination: Text(lunch.restaurant)) {
-                        Text(lunch.time)
+                    NavigationLink(destination: LunchesDetailView(isShowingView: $viewModel.isShowingDetailView, lunch: lunch)) {
+                        Text(lunch.restaurant)
                     }
                 }
                 .task {

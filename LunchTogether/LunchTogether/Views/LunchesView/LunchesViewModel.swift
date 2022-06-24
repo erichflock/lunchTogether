@@ -11,6 +11,7 @@ class LunchesViewModel: ObservableObject {
     
     @Published var lunches: [Lunch] = []
     @Published var isShowingFormView: Bool = false
+    @Published var isShowingDetailView: Bool = false
     
 //    private let repository: FirebaseRepository
     
