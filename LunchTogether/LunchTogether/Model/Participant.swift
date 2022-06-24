@@ -7,7 +7,7 @@
 
 import FirebaseFirestoreSwift
 
-struct Participant: FirebaseModel {
+struct Participant {
     
     static var collectionName = "participants"
     

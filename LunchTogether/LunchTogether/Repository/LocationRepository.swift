@@ -18,30 +18,30 @@ class FirebaseRepository<T: FirebaseModel & Identifiable> {
         decoder = JSONDecoder()
     }
     
-    func list(@escaping onComplete: ([T], Error) -> Void) {
-        firebase.collection(T.collectionName).getDocuments { snapshot, error in
-            if error {
-                onComplete([T](), error)
-                return
-            }
+//    func list(onComplete: @escaping ([T]?) -> Void) {
+//        firebase.collection(T.collectionName).getDocuments { snapshot, error in
+//            if let error = error {
+//                onComplete(nil)
+//                return
+//            }
+//
+//            guard let documents = snapshot?.documents else {
+//                onComplete(nil)
+//                return
+//            }
             
-            guard let document = snapshot?.documents.first() else {
-                onComplete(nil, nil)
-                return
-            }
-            
-            let decodedDocuments = decoder.decode(T.self, from: document)
-            onComplete(decodedDocuments)
-        }
-    }
+//            let decodedDocuments = decoder.decode([T].self, from: documents)
+//            onComplete(decodedDocuments)
+//        }
+//    }
     
-    func `get`(id: Identifiable.ID, @escaping onComplete(T?, Error) -> Void) {
+//    func `get`(id: Identifiable.ID, onComplete: @escaping (T?, Error) -> Void) {
         
-        guard let document = firebase.collection(T.collectionName).value(forKey: id) else {
-            onComplete(nil, nil)
-            return
-        }
-        
-        return decoder.decode(T.self, from: document)
-    }
+//        guard let document = firebase.collection(T.collectionName).value(forKey: id) else {
+//            onComplete(nil, nil)
+//            return
+//        }
+//
+//        return decoder.decode(T.self, from: document)
+//    }
 }

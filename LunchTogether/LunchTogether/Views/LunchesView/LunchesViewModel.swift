@@ -11,19 +11,19 @@ class LunchesViewModel: ObservableObject {
     
     @Published var lunches: [Lunch] = []
     
-    private let repository: FirebaseRepository
+//    private let repository: FirebaseRepository
     
     init() {
-        repository = FirebaseRepository<Lunch>()
+//        repository = FirebaseRepository<Lunch>()
     }
     
     func getLunches() {
-        repository.
+//        repository.
         
         lunches.removeAll()
-        let lunch1 = Lunch(restaurant: "Subway", time: "26-06-2022", participants: [.init(name: "James", email: "james@check24.de")])
-        let lunch2 = Lunch(restaurant: "Burguer King", time: "26-06-2022", participants: [.init(name: "Karl", email: "karl@check24.de")])
-        let lunch3 = Lunch(restaurant: "Pizza Place", time: "26-06-2022", participants: [.init(name: "Tom", email: "tom@check24.de")])
+        let lunch1 = Lunch(restaurant: "Subway", time: "26-06-2022", participants: [.init(email: "james@check24.de", name: "James")])
+        let lunch2 = Lunch(restaurant: "Burguer King", time: "26-06-2022", participants: [.init(email: "karl@check24.de", name: "Karl")])
+        let lunch3 = Lunch(restaurant: "Pizza Place", time: "26-06-2022", participants: [.init(email: "tom@check24.de", name: "Tom")])
         lunches.append(lunch1)
         lunches.append(lunch2)
         lunches.append(lunch3)

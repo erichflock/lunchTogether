@@ -9,5 +9,5 @@ import Foundation
 
 protocol FirebaseModel: Codable {
         
-    static var collectionName: String
+//    static var collectionName: String
 }

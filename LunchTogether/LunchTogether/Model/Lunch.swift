@@ -8,7 +8,7 @@
 import SwiftUI
 import FirebaseFirestoreSwift
 
-struct Lunch: Identifiable, FirebaseModel {
+struct Lunch: Identifiable {
     
     static var collectionName = "lunches"
     

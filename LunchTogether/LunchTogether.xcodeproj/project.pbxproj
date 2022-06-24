@@ -22,6 +22,8 @@
 		36EAC2292865D2E8007298E8 /* LunchesFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2282865D2E8007298E8 /* LunchesFormViewModel.swift */; };
 		36EAC22C2865DACE007298E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 36EAC22B2865DACE007298E8 /* FirebaseFirestore */; };
 		36EAC22E2865DACE007298E8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 36EAC22D2865DACE007298E8 /* FirebaseFirestoreSwift */; };
+		36EAC2302865DD89007298E8 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC22F2865DD89007298E8 /* FirebaseModel.swift */; };
+		36EAC2332865DDC7007298E8 /* LocationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2322865DDC7007298E8 /* LocationRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		36EAC2232865D050007298E8 /* LunchesFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesFormView.swift; sourceTree = "<group>"; };
 		36EAC2262865D097007298E8 /* XRoundedDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XRoundedDismissButton.swift; sourceTree = "<group>"; };
 		36EAC2282865D2E8007298E8 /* LunchesFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesFormViewModel.swift; sourceTree = "<group>"; };
+		36EAC22F2865DD89007298E8 /* FirebaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		36EAC2322865DDC7007298E8 /* LocationRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 				36EAC2042865B5E4007298E8 /* LunchTogetherApp.swift */,
 				36EAC2122865B67E007298E8 /* Views */,
 				36EAC2162865B92B007298E8 /* Model */,
+				36EAC2312865DDC7007298E8 /* Repository */,
 				36EAC2082865B5E5007298E8 /* Assets.xcassets */,
 				36EAC20A2865B5E5007298E8 /* Preview Content */,
 			);
@@ -115,6 +120,7 @@
 				36EAC2172865B947007298E8 /* Location.swift */,
 				36EAC21E2865C4EB007298E8 /* Lunch.swift */,
 				36EAC2202865C630007298E8 /* Participant.swift */,
+				36EAC22F2865DD89007298E8 /* FirebaseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +150,14 @@
 				36EAC2262865D097007298E8 /* XRoundedDismissButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		36EAC2312865DDC7007298E8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				36EAC2322865DDC7007298E8 /* LocationRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EAC2302865DD89007298E8 /* FirebaseModel.swift in Sources */,
 				36EAC2072865B5E4007298E8 /* LocationsView.swift in Sources */,
 				36EAC2152865B77D007298E8 /* LocationsViewModel.swift in Sources */,
+				36EAC2332865DDC7007298E8 /* LocationRepository.swift in Sources */,
 				36EAC2182865B947007298E8 /* Location.swift in Sources */,
 				36EAC2272865D097007298E8 /* XRoundedDismissButton.swift in Sources */,
 				36EAC2212865C630007298E8 /* Participant.swift in Sources */,
