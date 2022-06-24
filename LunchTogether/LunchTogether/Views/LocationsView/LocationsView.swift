@@ -13,7 +13,9 @@ struct LocationsView: View {
     
     var body: some View {
         List(viewModel.locations) { location in
-            Text(location.city)
+            NavigationLink(destination: Text(location.office)) {
+                Text(location.city)
+            }
         }
         .task {
             viewModel.getLocations()
