@@ -11,7 +11,9 @@ import SwiftUI
 struct LunchTogetherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                LocationsView()
+            }
         }
     }
 }
