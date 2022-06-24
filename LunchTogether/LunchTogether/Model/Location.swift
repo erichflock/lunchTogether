@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct Location: Identifiable {
+struct Location: FirebaseModel, Identifiable {
     
     static var collectionName = "locations"
     

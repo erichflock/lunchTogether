@@ -23,9 +23,9 @@ struct LunchesView: View {
                 .task {
                     viewModel.getLunches()
                 }
-                
+
                 Spacer()
-                
+
                 Button {
                     viewModel.isShowingFormView.toggle()
                 } label: {
@@ -40,7 +40,7 @@ struct LunchesView: View {
                 .cornerRadius(100/2)
             }
             .blur(radius: viewModel.getBlurRadius())
-            
+
             if viewModel.isShowingFormView {
                 LunchesFormView(isShowingView: $viewModel.isShowingFormView)
                     .padding(.bottom, 100)
