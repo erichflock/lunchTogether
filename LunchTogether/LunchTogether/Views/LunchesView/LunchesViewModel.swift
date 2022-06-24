@@ -14,8 +14,6 @@ class LunchesViewModel: ObservableObject {
     @Published var isShowingDetailView: Bool = false
     
     func getLunches() {
-        
-        
         lunches.removeAll()
         let lunch1 = Lunch(restaurant: "Subway", time: "26-06-2022", participants: [.init(email: "james@check24.de", name: "James")])
         let lunch2 = Lunch(restaurant: "Burguer King", time: "26-06-2022", participants: [.init(email: "karl@check24.de", name: "Karl")])

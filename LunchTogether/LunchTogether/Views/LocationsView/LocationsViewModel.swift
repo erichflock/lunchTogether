@@ -6,19 +6,31 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseFirestore
 
 class LocationsViewModel: ObservableObject {
     
     @Published var locations: [Location] = []
     
     func getLocations() {
-        locations.removeAll()
-        let location1 = Location(city: "München", office: "Brücke")
-        let location2 = Location(city: "Leipzig", office: "Brühl")
-        let location3 = Location(city: "Berlin", office: "Alexanderplatz")
-        locations.append(location1)
-        locations.append(location2)
-        locations.append(location3)
+        let query = Firestore.firestore().collection("locations").limit(to: 50)
+        
+        query.addSnapshotListener({ snapshot, error in
+            guard let snapshot = snapshot else {
+                print("Error fetching snapshot results: \(error!)")
+                return
+            }
+            
+            var models: [Location] = []
+            snapshot.documents.forEach({ document in
+                let data = document.data()
+                if let city = data["city"] as? String, let office = data["office"] as? String {
+                    models.append(Location(city: city, office: office))
+                }
+            })
+            self.locations = models
+        })
     }
     
 }

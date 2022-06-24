@@ -31,6 +31,6 @@ struct LunchesDetailView: View {
 
 struct LunchesDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        LunchesDetailView(isShowingView: .constant(false), lunch: .init(id: "1", restaurant: "Burguer King", time: Date().description, participants: [.init(name: "james")]))
+        LunchesDetailView(isShowingView: .constant(false), lunch: .init(restaurant: "Burguer King", time: Date().description, participants: [.init(email: "james@check24.de", name: "james")]))
     }
 }
