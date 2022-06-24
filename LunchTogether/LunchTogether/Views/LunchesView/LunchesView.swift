@@ -13,14 +13,33 @@ struct LunchesView: View {
     let location: Location
     
     var body: some View {
-        List(viewModel.lunches) { lunch in
-            NavigationLink(destination: Text(lunch.restaurant)) {
-                Text(lunch.time)
+        VStack {
+            
+            List(viewModel.lunches) { lunch in
+                NavigationLink(destination: Text(lunch.restaurant)) {
+                    Text(lunch.time)
+                }
             }
+            .task {
+                viewModel.getLunches()
+            }
+            
+            Spacer()
+            
+            Button {
+                
+            } label: {
+                Image(systemName: "plus")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .padding()
+            }
+            .background(.white)
+            .foregroundColor(.blue)
+            .controlSize(.large)
+            .cornerRadius(100/2)
         }
-        .task {
-            viewModel.getLunches()
-        }
+        .background(Color(.systemGroupedBackground))
         .navigationTitle("Lunches")
     }
 }
