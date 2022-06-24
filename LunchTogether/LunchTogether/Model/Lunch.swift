@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-class Lunch: ObservableObject {
-    
-    @Published var lunches: [Lunch] = []
-    
-    
+struct Lunch: Identifiable {
+    let id = UUID()
+    let restaurant: String
+    let time: String
+    let participants: [Participant]
 }

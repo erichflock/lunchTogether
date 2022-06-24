@@ -10,14 +10,23 @@ import SwiftUI
 struct LunchesView: View {
     
     @StateObject var viewModel = LunchesViewModel()
+    let location: Location
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(viewModel.lunches) { lunch in
+            NavigationLink(destination: Text(lunch.restaurant)) {
+                Text(lunch.time)
+            }
+        }
+        .task {
+            viewModel.getLunches()
+        }
+        .navigationTitle("Lunches")
     }
 }
 
 struct LunchesView_Previews: PreviewProvider {
     static var previews: some View {
-        LunchesView()
+        LunchesView(location: .init(city: "Leipzig", office: "Brühl"))
     }
 }

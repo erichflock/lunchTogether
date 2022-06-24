@@ -16,6 +16,7 @@
 		36EAC21B2865C29C007298E8 /* LunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC21A2865C29C007298E8 /* LunchesView.swift */; };
 		36EAC21D2865C2CB007298E8 /* LunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC21C2865C2CB007298E8 /* LunchesViewModel.swift */; };
 		36EAC21F2865C4EB007298E8 /* Lunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC21E2865C4EB007298E8 /* Lunch.swift */; };
+		36EAC2212865C630007298E8 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EAC2202865C630007298E8 /* Participant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		36EAC21A2865C29C007298E8 /* LunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesView.swift; sourceTree = "<group>"; };
 		36EAC21C2865C2CB007298E8 /* LunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchesViewModel.swift; sourceTree = "<group>"; };
 		36EAC21E2865C4EB007298E8 /* Lunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lunch.swift; sourceTree = "<group>"; };
+		36EAC2202865C630007298E8 /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				36EAC2172865B947007298E8 /* Location.swift */,
 				36EAC21E2865C4EB007298E8 /* Lunch.swift */,
+				36EAC2202865C630007298E8 /* Participant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				36EAC2072865B5E4007298E8 /* LocationsView.swift in Sources */,
 				36EAC2152865B77D007298E8 /* LocationsViewModel.swift in Sources */,
 				36EAC2182865B947007298E8 /* Location.swift in Sources */,
+				36EAC2212865C630007298E8 /* Participant.swift in Sources */,
 				36EAC21F2865C4EB007298E8 /* Lunch.swift in Sources */,
 				36EAC21B2865C29C007298E8 /* LunchesView.swift in Sources */,
 				36EAC2052865B5E4007298E8 /* LunchTogetherApp.swift in Sources */,

@@ -13,7 +13,7 @@ struct LocationsView: View {
     
     var body: some View {
         List(viewModel.locations) { location in
-            NavigationLink(destination: Text(location.office)) {
+            NavigationLink(destination: LunchesView(location: location)) {
                 Text(location.city)
             }
         }
