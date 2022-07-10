@@ -1,10 +1,3 @@
-//
-//  LunchesView.swift
-//  LunchTogether
-//
-//  Created by Erich Flock on 24.06.22.
-//
-
 import SwiftUI
 
 struct LunchesView: View {
@@ -16,8 +9,9 @@ struct LunchesView: View {
         ZStack {
             VStack {
                 List(viewModel.lunches) { lunch in
-                    NavigationLink(destination: Text(lunch.restaurant)) {
-                        Text(lunch.time)
+                    NavigationLink(destination: Text(lunch.restaurant.name)) {
+                        Text("12:12")
+                        Text("\(lunch.participants.count) Teilnehmer")
                     }
                 }
                 .task {
@@ -48,11 +42,5 @@ struct LunchesView: View {
         }
         .background(Color(.systemGroupedBackground))
         .navigationTitle("Lunches")
-    }
-}
-
-struct LunchesView_Previews: PreviewProvider {
-    static var previews: some View {
-        LunchesView(location: .init(city: "Leipzig", office: "Brühl"))
     }
 }

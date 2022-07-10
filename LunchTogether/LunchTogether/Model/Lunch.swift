@@ -1,19 +1,12 @@
-//
-//  Lunch.swift
-//  LunchTogether
-//
-//  Created by Erich Flock on 24.06.22.
-//
-
 import SwiftUI
 import FirebaseFirestoreSwift
 
-struct Lunch: Identifiable {
+struct Lunch: FirebaseModel, Identifiable {
     
     static var collectionName = "lunches"
     
     @DocumentID var id: String?
-    var restaurant: String
-    var time: String
+    var location: Location
+    var restaurant: Restaurant
     var participants: [Participant]
 }

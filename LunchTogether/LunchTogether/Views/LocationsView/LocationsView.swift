@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  LunchTogether
-//
-//  Created by Erich Flock on 24.06.22.
-//
-
 import SwiftUI
 
 struct LocationsView: View {
@@ -15,17 +8,14 @@ struct LocationsView: View {
         List(viewModel.locations) { location in
             NavigationLink(destination: LunchesView(location: location)) {
                 Text(location.city)
+                
+                Text(location.office)
+                    .font(.caption)
             }
         }
         .task {
             viewModel.getLocations()
         }
         .navigationTitle("Locations")
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationsView()
     }
 }

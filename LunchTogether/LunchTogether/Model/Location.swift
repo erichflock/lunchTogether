@@ -1,14 +1,7 @@
-//
-//  Location.swift
-//  LunchTogether
-//
-//  Created by Erich Flock on 24.06.22.
-//
-
 import Foundation
 import FirebaseFirestoreSwift
 
-struct Location: Identifiable {
+struct Location: FirebaseModel, Identifiable {
     
     static var collectionName = "locations"
     

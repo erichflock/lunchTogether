@@ -1,16 +1,10 @@
-//
-//  Participant.swift
-//  LunchTogether
-//
-//  Created by Erich Flock on 24.06.22.
-//
-
 import FirebaseFirestoreSwift
 
-struct Participant {
+struct Participant: FirebaseModel, Identifiable {
     
     static var collectionName = "participants"
     
     @DocumentID var email: String?
+    var id: String? { email }
     let name: String
 }
