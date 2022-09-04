@@ -9,4 +9,5 @@ struct Lunch: FirebaseModel, Identifiable {
     var location: Location
     var restaurant: Restaurant
     var participants: [Participant]
+    var date: Date
 }

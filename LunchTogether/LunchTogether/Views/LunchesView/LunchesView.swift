@@ -3,7 +3,7 @@ import SwiftUI
 struct LunchesView: View {
     
     @StateObject var viewModel = LunchesViewModel()
-    let location: Location
+    @State var location: Location
     
     var body: some View {
         ZStack {
@@ -36,7 +36,7 @@ struct LunchesView: View {
             .blur(radius: viewModel.getBlurRadius())
             
             if viewModel.isShowingFormView {
-                LunchesFormView(isShowingView: $viewModel.isShowingFormView)
+                LunchesFormView(isShowingView: $viewModel.isShowingFormView, location: $location)
                     .padding(.bottom, 100)
             }
         }

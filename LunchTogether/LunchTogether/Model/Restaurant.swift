@@ -7,4 +7,5 @@ struct Restaurant: FirebaseModel {
     
     @DocumentID var id: String?
     let name: String
+    let address: String
 }

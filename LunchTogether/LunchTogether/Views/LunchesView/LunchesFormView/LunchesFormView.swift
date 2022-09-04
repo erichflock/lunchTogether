@@ -11,6 +11,7 @@ struct LunchesFormView: View {
     
     @StateObject var viewModel = LunchesFormViewModel()
     @Binding var isShowingView: Bool
+    @Binding var location: Location
     
     var body: some View {
         VStack {
@@ -21,7 +22,7 @@ struct LunchesFormView: View {
             }
             .padding()
             Button {
-                
+                viewModel.addEvent(location)
             } label: {
                 Text("Add Event")
             }
@@ -37,6 +38,6 @@ struct LunchesFormView: View {
 
 struct LunchesFormView_Previews: PreviewProvider {
     static var previews: some View {
-        LunchesFormView(isShowingView: .constant(false))
+        LunchesFormView(isShowingView: .constant(false), location: .constant(.init(city: "city", office: "office")))
     }
 }

@@ -33,4 +33,9 @@ class FirebaseRepository<T: FirebaseModel> {
         let reference = firebase.collection(T.collectionName).document(id)
         reference.getDocument(as: T.self) { onComplete(try? $0.get()) }
     }
+    
+    func addEvent(lunch: Lunch) {
+        print("Add Event")
+        print("Lunch: \(lunch)")
+    }
 }
